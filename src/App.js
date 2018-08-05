@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
-import './App.css';
 
 class Cello extends Component {
   render() {
-    return(
-      <h1>Cello World!</h1>
+    var kanban = "Kanban";
+    return (
+      <div><h1>Cello { kanban } </h1></div>
     );
   }
 }
