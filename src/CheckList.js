@@ -6,7 +6,7 @@ class CheckList extends Component {
             <li className="checklist_task">
                 <input type="checkbox" defaultChecked={task.done} />
                 {task.name}
-                <a href="#" className="checklist_task--remove" />
+                <a href="#" className="checklist__task--remove" />
             </li>
         ));
         return (
@@ -17,4 +17,4 @@ class CheckList extends Component {
     }
 }
 
-export default CheckLists;
+export default CheckList;
