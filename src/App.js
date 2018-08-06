@@ -1,4 +1,7 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import registerServiceWorker from './registerServiceWorker';
 import KanbanBoard from './KanbanBoard';
 
 let cardList = [
@@ -34,4 +37,5 @@ let cardList = [
     },
 ];
 
-export default KanbanBoard;
+ReactDOM.render(<KanbanBoard cards={cardsList} />, document.getElementById('root'));
+registerServiceWorker();
