@@ -38,6 +38,15 @@ let cardsList = [
         done: false
       }
     ]
+  },
+  {
+    id: 3,
+    title:
+      "This is a new card with a very, very, very long title, thus having more than 80 characters. This is a new card with a very, very, very long title, thus having more than 80 characters.",
+    description: "80 characters testing.",
+    color: "#BD8D31",
+    status: "done",
+    tasks: []
   }
 ];
 
