@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { render } from "react-dom";
 import "./index.css";
 
 import KanbanBoard from "./KanbanBoard";
@@ -10,6 +10,7 @@ let cardsList = [
     id: 1,
     title: "Read the Book",
     description: "I should read the **whole** book",
+    color: "#BD8D31",
     status: "in-progress",
     tasks: []
   },
@@ -18,6 +19,7 @@ let cardsList = [
     title: "Write some code",
     description:
       "Code along with the samples in the book. The complete source can be found at [github](https://github.com/alfieqashwa)",
+    color: "#3A7E28",
     status: "todo",
     tasks: [
       {
@@ -39,10 +41,7 @@ let cardsList = [
   }
 ];
 
-ReactDOM.render(
-  <KanbanBoard cards={cardsList} />,
-  document.getElementById("root")
-);
+render(<KanbanBoard cards={cardsList} />, document.getElementById("root"));
 registerServiceWorker();
 
 // ReactDOM.render(<App />, document.getElementById('root'));
