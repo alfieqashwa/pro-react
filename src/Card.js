@@ -11,6 +11,10 @@ class Card extends Component {
     };
   }
 
+  toggleDetails() {
+    this.setState({ showDetails: !this.state.showDetails });
+  }
+
   render() {
     let cardDetails;
 
@@ -26,15 +30,7 @@ class Card extends Component {
 
     return (
       <div className="card">
-        <div
-          className="card__title"
-          onClick={
-            // event handler to change internal state.
-            // Use the JavaScript ! (not) operator to toggle the Boolean property showDetails
-            // if it's currently true, it will became false and vise-versa
-            () => this.setState({ showDetails: !this.state.showDetails })
-          }
-        >
+        <div className="card__title" onClick={this.toggleDetails.bind(this)}>
           {this.props.title}
         </div>
         {cardDetails}
