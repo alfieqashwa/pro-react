@@ -1,16 +1,11 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom';
-// import './index.css';
-// import App from './App';
-// import registerServiceWorker from './registerServiceWorker';
-
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import registerServiceWorker from "./registerServiceWorker";
-import KanbanBoard from "./KanbanBoard";
 
-let cardList = [
+import KanbanBoard from "./KanbanBoard";
+import registerServiceWorker from "./registerServiceWorker";
+
+let cardsList = [
   {
     id: 1,
     title: "Read the Book",
@@ -44,7 +39,7 @@ let cardList = [
 ];
 
 ReactDOM.render(
-  <KanbanBoard cards={cardList} />,
+  <KanbanBoard cards={cardsList} />,
   document.getElementById("root")
 );
 registerServiceWorker();
